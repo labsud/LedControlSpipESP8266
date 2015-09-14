@@ -175,6 +175,9 @@ while (1) {
   curcharbitsave2 = curcharbit;
 
   // Loop through our 8 displays
+  // depending of led matrix components, one of the following must be uncommented
+  // if chars are swapped, use the other one....
+//for (i=NUMLEDDEVICES-1; i>=0;i--) {
   for (i=0;i<=NUMLEDDEVICES;i++)  {
     // Set up rows on current  display
     for (j=0;j<8;j++) {      
